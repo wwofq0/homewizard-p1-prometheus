@@ -18,18 +18,27 @@ type Client struct {
 
 // Data data
 type Data struct {
-	SmrVersion 						int64 `json:"smr_version"`
+	SmrVersion            int64   `json:"smr_version"`
 	MeterModel            string  `json:"meter_model"`
 	WifiSSID              string  `json:"wifi_ssid"`
 	WifiStrength          float64 `json:"wifi_strength"`
+	TotalPowerImportKwh   float64 `json:"total_power_import_kwh"`
 	TotalPowerImportT1Kwh float64 `json:"total_power_import_t1_kwh"`
 	TotalPowerImportT2Kwh float64 `json:"total_power_import_t2_kwh"`
+	TotalPowerExportKwh   float64 `json:"total_power_export_kwh"`
 	TotalPowerExportT1Kwh float64 `json:"total_power_export_t1_kwh"`
 	TotalPowerExportT2Kwh float64 `json:"total_power_export_t2_kwh"`
 	ActivePowerW          float64 `json:"active_power_w"`
 	ActivePowerL1W        float64 `json:"active_power_l1_w"`
 	ActivePowerL2W        float64 `json:"active_power_l2_w"`
 	ActivePowerL3W        float64 `json:"active_power_l3_w"`
+	ActiveVoltageL1V      float64 `json:"active_voltage_l1_v"`
+	ActiveVoltageL2V      float64 `json:"active_voltage_l2_v"`
+	ActiveVoltageL3V      float64 `json:"active_voltage_l3_v"`
+	ActiveCurrentL1A      float64 `json:"active_current_l1_a"`
+	ActiveCurrentL2A      float64 `json:"active_current_l2_a"`
+	ActiveCurrentL3A      float64 `json:"active_current_l3_a"`
+	ActiveFrequenczyHZ    float64 `json:"active_frequency_hz"`
 	TotalGasM3            float64 `json:"total_gas_m3"`
 }
 
